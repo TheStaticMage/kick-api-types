@@ -37,6 +37,11 @@ export interface ChannelReward {
     is_enabled: boolean;
 
     /**
+     * Whether this reward is paused
+     */
+    is_paused: boolean;
+
+    /**
      * Whether this reward requires user input
      */
     is_user_input_required: boolean;
@@ -121,6 +126,11 @@ export interface ChannelRewardUpdateRequest {
      * Whether this reward is enabled
      */
     is_enabled?: boolean;
+
+    /**
+     * Whether this reward is paused
+     */
+    is_paused?: boolean;
 
     /**
      * Whether this reward requires user input
